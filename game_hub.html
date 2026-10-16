@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ghost of Tsushima - Game Hub</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body class="hub-page-body">
+
+    <!-- Background and Vignette -->
+    <div class="hub-hero-bg ghostoftsushima-bg" style="position: fixed;"></div>
+    <div class="hub-vignette" style="position: fixed;"></div>
+
+    <!-- Retained Top Bar Header -->
+    <header class="ps-header hub-header">
+        <div class="nav-tabs">
+            <span class="tab">Games</span>
+            <span class="tab">Media</span>
+        </div>
+        <div class="header-right">
+            <span class="header-icon">🔍</span>
+            <span class="header-icon">⚙️</span>
+            <span class="profile-badge">Johan</span>
+        </div>
+    </header>
+
+    <!-- Scrollable Main Content Container matching your sketch layout -->
+    <main class="scrollable-hub-container">
+        
+        <!-- Back Button -->
+        <button class="back-to-home-btn-static" onclick="window.location.href='dashboard.html'">⬅ Back to Games</button>
+
+        <!-- Title Section -->
+        <h1 class="hub-main-title" style="text-align: center;">Ang Daan ng Mandirigma:<br>Digmaan, Sakripisyo, at ang Makabagong Lipunan sa Ghost of Tsushima</h1>
+
+        <!-- Row 1: Text Card & Image Card -->
+        <div class="hub-row">
+            <div class="hub-card text-card">
+                <h3>Pangunahing Ideya</h3>
+                <p style="text-align: justify;">
+                    Isang Online Action-Based RPG game na umiikot sa kwento ng pangunahing bida, si Jin Sakai, na siya ring karakter 
+                    na kinokontrol ng player, at kung paano niya nabuhay, nakaligtas, at naitaboy ang mga sundalo mula sa Mongolian Empire palayo 
+                    sa Tsushima ang <strong><em>Ghost of Tsushima</em></strong>. Nagbibigay-daan ang laro mismo sa karakter na maglibot sa isla ng Tsushima kasama ang kanilang 
+                    kabayo upang palayasin ang mga bandidong Tsushima na nagnanakaw o nagdudulot ng gulo sa mga residente, at pumatay ng mga Mongolian 
+                    na lumulusob sa mga nayon.
+                </p>
+            </div>
+            <div class="hub-card image-card">
+                <img src="Images/scenery.jpg" alt="Ghost of Tsushima" style="width: 100%; height: 100%; object-fit: cover; border-radius: 12px;">
+            </div>
+        </div>
+
+        <!-- Row 2: Nested Container with Header and 3 Sub-Cards (Trophies/Media style) -->
+        <div class="hub-nested-section">
+            <h3 class="nested-section-title">Itong laro ay ang aking paborito dahil:</h3>
+            <div class="hub-triple-grid">
+                <div class="sub-card">
+                    <img src="Images/intro.jpg" class="sub-img-file">
+                    <span style="text-align: justify;">Nagbibigay ang laro ng magagandang <strong><em>graphics</em></strong> na nagbibigay ng nakakarelaks na kapaligiran, lalo na kapag naglalakbay sa isla kasama ang aking kabayo.</span>
+                </div>
+                <div class="sub-card">
+                    <img src="Images/violence.webp" class="sub-img-file">
+                    <span style="text-align: justify;">Mayroon din itong <strong><em>combat system</em></strong> na malinis, mabilis, at legit. Sa tuwing sasabak ako sa labanan, pakiramdam ko ako ang karakter na lumalaban sa sarili ko.</span>
+                </div>
+                <div class="sub-card">
+                    <img src="Images/skilltree.jpg" class="sub-img-file">
+                    <span style="text-align: justify;">
+                        Mayroon ding <strong><em>progression system</em></strong> na may <strong><em>skill tree</em></strong> ang laro kung saan maaaring gumastos ang manlalaro ng mga puntos na nakuha sa 
+                        labanan upang matuto ng mga bagong diskarte.
+                    </span>
+                </div>
+            </div>
+        </div>
+
+        <!-- Row 3: Image Card & Text Card (Reversed layout) -->
+        <div class="hub-row">
+            <div class="hub-card image-card">
+                <img src="Images/story.jpg" alt="Ghost of Tsushima" style="width: 100%; height: 100%; object-fit: cover; border-radius: 12px;">
+            </div>
+            <div class="hub-card text-card">
+                <h3>Ang Kuwento sa Likod ng Laro</h3>
+                <p style="text-align: justify;">
+                    Ang kwento sa likod ng laro ang detalyeng nakakuha ng atensyon ko. Nagsimula ang laro nang sumalakay ang mga Mongol sa isla ng Tsushima. Sinubukang ipagtanggol 
+                    ni Jin Sakai, ng kanyang tiyuhin na si Lord Shimura, at ng lahat ng samurai ng Tsushima ang isla mula sa mga Mongolian, ngunit pinatay ang bawat isa sa mga samurai, 
+                    maliban kay Lord Shimura, na nahuli, at Jin Sakai, na halos hindi nakabitin sa kanyang mga pinsala. Upang mailigtas ang kanyang tiyuhin at mapalayas ang mga 
+                    Mongolian, kinailangan ni Jin Sakai na tipunin ang natitirang mga mandirigma sa Tsushima. Sinuway niya ang <strong><em>samurai code</em></strong>, na nagsasabing duwag ang pag-atake mula sa 
+                    likod tulad ng isang ambus o isang pagpatay. Gayunpaman, ang pinakamahusay na taktika ito, dahil napilitang pumasok at pumatay sa mga Mongolian si Jin Sakai, dahil 
+                    walang awa nilang papatayin ang sinumang bihag sa sandaling makita ang isang samurai. Sa kabila ng digmaan na nagaganap sa Isla, mayroon ding panloob na salungatan 
+                    sa loob ng Jin Sakai. Alinman sa sundin ang <strong><em>samurai code</em></strong>, na hahantong sa pagkamatay ng mga residente, o gumamit ng mga paraan ng pagtambang, tulad ng isang <strong><em>"Ghost"</em></strong>, 
+                    upang matiyak na mabubuhay ang mga residente ng Tsushima, ngunit hahatulan at parurusahan siya dahil sa pagsuway sa <strong><em>"code"</em></strong>. 
+                </p>
+            </div>
+        </div>
+
+        <!-- Row 2: Nested Container with Header and 3 Sub-Cards (Trophies/Media style) -->
+        <div class="hub-nested-section">
+            <h3 class="nested-section-title">Ang Karahasan, Pang-aalipin, at Paghihimagsik ang pinakatanyag na isyung panlipunan na makikita sa larong ito.</h3>
+            <div class="hub-triple-grid">
+                <div class="sub-card">
+                    <img src="Images/combat.webp" class="sub-img-file">
+                    <span style="text-align: justify;">Makikita ang karahasan dahil maraming inosente, samurai, Mongolian, at residente ang namamatay sa panahon ng digmaan. May kamatayan saanman pumunta si Jin Sakai, dahil pinilit siya mismo na patayin ang mga Mongolian na ito.</span>
+                </div>
+                <div class="sub-card">
+                    <img src="Images/free-the-hostages.jpg" class="sub-img-file">
+                    <span style="text-align: justify;">Nangyayari din ang pang-aalipin sa larong ito kapag nakuha ng mga Mongolian ang mga nayon at ginamit ang mga residente bilang mga alipin. Pinilit ang mga aliping ito na magtrabaho bilang mga panday, magsasaka, at sundalo na nilalayong maglingkod sa imperyo ng Mongolia.</span>
+                </div>
+                <div class="sub-card">
+                    <img src="Images/revenge.jpg" class="sub-img-file">
+                    <span style="text-align: justify;">Sa kabila ng pagpilit ng isla na magkaisa sa isa't isa upang pigilan ang imperyong Mongolian sa pagsakop sa kanilang lupain, karaniwan pa rin ang paghihimagsik. Dito sa islang ito ay may mga bandido na lumalaban sa mga batas para makakuha ng kapangyarihan, at mga grupo ng mga mandarambong na nagpapabagsak at pumapatay sa mga angkan na tumagal ng ilang dekada.</span>
+                </div>
+            </div>
+        </div>
+
+        <!-- Row 4: Single Full-Width Text / Info Box -->
+        <div class="hub-card full-width-card">
+            <h3>Koneksyon sa mga Kasalukuyang Kaganapan sa Lipunan</h3>
+            <p style="text-align: justify;">
+                Sumasalamin sa totoong mga isyung panlipunan na nakikita pa rin natin ngayon ang mga tema ng karahasan, pang-aalipin, at paghihimagsik sa 
+                <strong><em>Ghost of Tsushima</em></strong>. Sumasalamin sa mga modernong paglabag sa karapatang pantao, tulad ng human trafficking at sapilitang 
+                paggawa sa mga conflict zone, ang karahasan at sapilitang paggawa na inilalarawan sa laro. Higit pa rito, kung paanong naghimagsik ang mga tao ng Tsushima 
+                laban sa mga dayuhang mapang-api at mahigpit na mga panuntunan upang mabuhay, nakikibahagi ang mga modernong komunidad sa buong mundo sa mga protesta at 
+                mga kilusang panlipunan upang labanan ang digmaan, pampulitika na pang-aapi, at sistematikong kawalang-katarungan. Sa huli, itinatampok ng mensahe ng laro 
+                ang walang hanggang pakikibaka ng tao na lumaban at humingi ng hustisya kapag nahaharap sa kalupitan at paniniil. 
+            </p>
+        </div>
+
+        <!-- Row 5: References / Footer Box -->
+        <div class="hub-card references-card">
+            <h3 style="text-align: center;">References</h3>
+            <p style="text-align: center;">
+                <a href="https://gideonsgaming.com/ghost-of-tsushima-review-honor-and-death/" target="_blank">Ghost of Tsushima Review</a><br>
+                <a href="https://en.wikipedia.org/wiki/Ghost_of_Tsushima" target="_blank">Ghost of Tsushima Wikipedia</a><br>
+                <a href="https://store.steampowered.com/app/2215430/Ghost_of_Tsushima_DIRECTORS_CUT/" target="_blank">Ghost of Tsushima Steam</a>
+            </p>
+        </div>
+
+    </main>
+
+</body>
+</html>

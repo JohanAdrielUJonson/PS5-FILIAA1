@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PlayStation 5 - Select User</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="light-ray"></div>
+    <div class="particle-field" id="particles"></div>
+
+    <div class="screen active">
+        <div class="profile-container">
+            <h1 class="boot-title">Who is using this controller?</h1>
+            <div class="profiles-grid">
+                <div class="profile-card" onclick="selectProfile('Johan')">
+                    <div class="avatar">
+                        <img src="Images/jojo.jpg" alt="Avatar">
+                    </div>
+                    <span>Johan</span>
+                </div>
+                <div class="profile-card" onclick="selectProfile('Guest')">
+                    <div class="avatar guest-avatar">
+                        <span>+</span>
+                    </div>
+                    <span>Guest</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

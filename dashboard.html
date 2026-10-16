@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PlayStation 5 Dashboard</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <!-- VIEW 1: MAIN HOME DASHBOARD -->
+    <div id="home-view" class="dashboard-view active">
+        <header class="ps-header">
+            <div class="nav-tabs">
+                <span class="tab active">Games</span>
+                <span class="tab">Media</span>
+            </div>
+            <div class="header-right">
+                <span class="header-icon">🔍</span>
+                <span class="header-icon">⚙️</span>
+                <span id="current-user-display" class="profile-badge">Johan</span>
+            </div>
+        </header>
+
+        <main class="dashboard-content">
+            <h2 class="section-title">Played Recently</h2>
+            <div class="games-grid">
+                <div class="game-tile" onclick="openGameHub('Ghost of Tsushima', 'ghostoftsushima')">
+                    <div class="tile-image ghostoftsushima-bg"></div>
+                    <div class="tile-info">
+                        <h3>Ghost of Tsushima</h3>
+                        <p>Action RPG</p>
+                    </div>
+                </div>
+                <div class="game-tile store-tile non-interactive">
+                    <div class="tile-image minecraft-bg"></div>
+                    <div class="tile-info">
+                        <h3>Minecraft</h3>
+                        <p>Adventure & Build</p>
+                    </div>
+                </div>
+                <div class="game-tile store-tile non-interactive">
+                    <div class="tile-image spiderman2-bg"></div>
+                    <div class="tile-info">
+                        <h3>Spider-Man 2</h3>
+                        <p>Experiences</p>
+                    </div>
+                </div>
+                <div class="game-tile store-tile non-interactive">
+                    <div class="tile-image store-bg"></div>
+                    <div class="tile-info">
+                        <h3>PlayStation Store</h3>
+                        <p>Explore & Buy</p>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <!-- VIEW 2: GAME HUB / DETAILS SCREEN -->
+    <div id="game-hub-view" class="dashboard-view">
+        <div id="hub-bg" class="hub-hero-bg"></div>
+        <div class="hub-vignette"></div>
+
+        <header class="ps-header hub-header">
+            <div class="nav-tabs">
+                <span class="tab">Games</span>
+                <span class="tab">Media</span>
+            </div>
+            
+            <div class="header-right">
+                <span class="header-icon">🔍</span>
+                <span class="header-icon">⚙️</span>
+                <span id="hub-user-display" class="profile-badge">Johan</span>
+            </div>
+        </header>
+
+        <main class="hub-content">
+            <div class="hub-game-info">
+                <div class="featured-icon-badge" id="hub-icon-badge">⛏️</div>
+                <h1 id="hub-title" class="hub-game-title">Minecraft</h1>
+                <p id="hub-tagline" class="hub-game-tagline">Explore, build and conquer!</p>
+                <div class="hub-actions">
+                    <button class="play-btn" onclick="launchGame()">Play Game</button>
+                    <button class="options-btn">•••</button>
+                </div>
+            </div>
+
+            <div class="hub-stats-bar">
+                <div class="stat-card">
+                    <div class="trophy-icons">
+                        <span>🏆 0</span>
+                        <span>🥈 1</span>
+                        <span>🥉 2</span>
+                        <span>🥇 28</span>
+                    </div>
+                    <span class="stat-label">Trophies</span>
+                </div>
+                <div class="stat-card">
+                    <span class="stat-value">📊 48%</span>
+                    <span class="stat-label">Progress</span>
+                </div>
+                <div class="stat-card">
+                    <span class="stat-value">⏱️ 24h</span>
+                    <span class="stat-label">Played</span>
+                </div>
+            </div>
+        </main>
+
+        <button class="back-to-home-btn" onclick="closeGameHub()">⬅ Back to Games</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
